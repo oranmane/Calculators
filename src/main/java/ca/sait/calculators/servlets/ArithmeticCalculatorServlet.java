@@ -62,7 +62,10 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                 
                 message = String.format("%s", calcNum);
 
+                request.setAttribute("firstInput", firstInput);
+                request.setAttribute("secondInput", secondInput);                
                 request.setAttribute("message", message);
+                
             } catch (NumberFormatException ex) {
                 // Input exists but is not a number.
                 message = "invalid";
@@ -73,8 +76,6 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
             // Input is missing
             message = "invalid";
 
-            request.setAttribute("firstInput", firstInput);
-            request.setAttribute("secondInput", secondInput);
             request.setAttribute("message", message);
         }
         
