@@ -22,7 +22,7 @@
             ${message}
         </div>
         <div>
-            <a href="arithmeticcalculator.jsp">Arithmetic Calculator</a>
+            <a href="/Calculators/arithmetic">Arithmetic Calculator</a>
         </div>
         
     </body>
